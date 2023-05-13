@@ -1,8 +1,8 @@
-pandas
-SQLAlchemy
-streamlit
-streamlit-folium
-Faker
-pyarrow
-elasticsearch-loader[parquet]
-python-dotenv
+pandas==1.5.3
+SQLAlchemy==2.0.12
+streamlit==1.22.
+streamlit-folium==0.11.1
+Faker==18.6.2
+pyarrow==12.0.0
+elasticsearch-loader[parquet]==0.6.0
+python-dotenv==1.0.0
