@@ -1,0 +1,8 @@
+pandas
+SQLAlchemy
+streamlit
+streamlit-folium
+Faker
+pyarrow
+elasticsearch-loader[parquet]
+python-dotenv
