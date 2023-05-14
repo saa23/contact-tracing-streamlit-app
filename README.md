@@ -52,15 +52,16 @@ But the important columns that needed in the project are:
 - download the dataset
 - transform the data using script 
  After that, create a docker compose to build image for service Elasticsearch and Kibana.
- 
+
 **(need update later)**
 
 ## Streamlit App
  Here are some functionality in the contact tracing streamlit app:
 ### 1. Search by Free Text
-
+![Search by free text](./images/search-by-free-text-small.png)
 ### 2. Search by Zip Code
-
+![Search by free text](./images/search-by-zip-small.png)
 ### 3. Search by Business ID
-
+![Search by free text](./images/search-by-business-id-small.png)
 ### 4. Search by Device ID
+![Search by free text](./images/search-by-device-id-small.png)
