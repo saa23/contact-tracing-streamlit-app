@@ -1,0 +1,2 @@
+This is folder for dataset.
+the dataset can be downloaded here: https://www.kaggle.com/datasets/san-francisco/sf-registered-business-locations-san-francisco

@@ -211,7 +211,11 @@ $RECYCLE.BIN/
 *.lnk
 
 # ignore some folders since they possibly contain large data (no need to push)
-data/
+data/*.json
+data/*.csv
+data/*.xls
+data/*.xlsx
+
 # images/*.png
 # images/*.jpg
 # images/*.jpeg
