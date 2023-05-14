@@ -212,7 +212,9 @@ $RECYCLE.BIN/
 
 # ignore some folders since they possibly contain large data (no need to push)
 data/
-images/
+images/*.png
+images/*.jpg
+images/*.jpeg
 
 # ignore file testing purpose
 test*.py
