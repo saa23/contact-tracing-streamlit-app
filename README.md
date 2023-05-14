@@ -1,4 +1,5 @@
 # Contact Tracing Streamlit App
+The app, generated from streamlit library, can function for tracing the historical contact location, it is usually done especially during the COVID-19 pandemic. Through the app the tracing process can be searched based on `free text`, `zip code`, `business ID`, and `device ID`.
 ## Table of Contents
 - [Dataset](#dataset)
 - [Project Flow](#project-flow)
@@ -40,21 +41,33 @@ But the important columns that needed in the project are:
 3. Street Address &emsp; $\rightarrow$ &emsp; Business location street address
 4. City &emsp; $\rightarrow$ &emsp; Business location city
 5. Source Zipcode &emsp; $\rightarrow$ &emsp; Business location zip code
-6. Business Location &emsp; $\rightarrow$ &emsp; The latitude and longitude of the business location for mapping purposes.
-
+6. Business Location &emsp; $\rightarrow$ &emsp; The latitude and longitude of the business location for mapping purposes
 ## Requirements
 - The project use python 3.8 (but it might be ok to  use later version).
 - Whereas the python library needed, please kindly check the [requirements.txt](./requirements.txt)
 - Other than that, it is mandatory to install docker.
-
-
 ## Project Flow
-- download the dataset
-- transform the data using script 
- After that, create a docker compose to build image for service Elasticsearch and Kibana.
-
-**(need update later)**
-
+- Download the dataset
+- The project only need six columns from the dataset, those are: `location ID`, `DBA name`, `street address`, `city`, `source zipcode`, and `business location`.
+- Then normalize the json data within `business location` into `langitude` and `longitude` data.
+- Add some columns by creating fake data using Faker library. Those additional columns are: `user_name`, `user_state`, `user_birth_date`, and `deviceID`.
+- While columns `scan_timestamp` to simplify the case in the project, it created from random date between two date values.
+- Those mention-above conclude the final columns used:
+    1. `Location ID` (renamed to `business_id`)
+    2. `DBA Name` (renamed to `business_name`)
+    3. `Street Address` (renamed to `business_address`)
+    4. `city`
+    5. `Source Zipcode` (renamed to `zip`)
+    6. `langitude`
+    7. `longitude`
+    8. `user_name`
+    9. `user_state`
+    10. `user_birth_date`
+    11. `deviceID`
+    12. `scan_timestamp`
+- After that, create run a docker compose file to build image for service Elasticsearch and Kibana.
+- Dump the transformed dataset into Elasticsearch
+- Build streamlit app to visualize the UI.
 ## Streamlit App
  Here are some functionality in the contact tracing streamlit app:
 ### 1. Search by Free Text
