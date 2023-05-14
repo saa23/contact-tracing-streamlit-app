@@ -2,9 +2,7 @@
 ## Table of Contents
 - [Dataset](#dataset)
 - [Project Flow](#project-flow)
-
-
-
+- [Streamlit App](#streamlit-app)
 
 ## Dataset
 The location dataset to represent contact tracing refer to [SF Registered Business Locations - San Francisco](https://www.kaggle.com/datasets/san-francisco/sf-registered-business-locations-san-francisco).
@@ -54,7 +52,15 @@ But the important columns that needed in the project are:
 - download the dataset
 - transform the data using script 
  After that, create a docker compose to build image for service Elasticsearch and Kibana.
-| Header 1 | Header 2 |
-| -------- | -------- |
-| Data 1   | Data 2   |
-| Data 3   | Data 4   |
+ 
+**(need update later)**
+
+## Streamlit App
+ Here are some functionality in the contact tracing streamlit app:
+### 1. Search by Free Text
+
+### 2. Search by Zip Code
+
+### 3. Search by Business ID
+
+### 4. Search by Device ID
