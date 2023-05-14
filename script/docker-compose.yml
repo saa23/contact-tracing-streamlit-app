@@ -7,8 +7,8 @@ services:
     environment:
       discovery.type: 'single-node'
       xpack.security.enabled: 'true'
-      ELASTIC_USERNAME: 'elastic'
-      ELASTIC_PASSWORD: 'elastic'
+      ELASTIC_USERNAME: 'admin'
+      ELASTIC_PASSWORD: 'password'
     ulimits:
       memlock:
         soft: -1
@@ -29,8 +29,8 @@ services:
     image: docker.elastic.co/kibana/kibana:7.17.1
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-      - ELASTICSEARCH_USERNAME=elastic
-      - ELASTICSEARCH_PASSWORD=elastic
+      - ELASTICSEARCH_USERNAME=admin
+      - ELASTICSEARCH_PASSWORD=password
     ports:
       - 5601:5601
     depends_on:

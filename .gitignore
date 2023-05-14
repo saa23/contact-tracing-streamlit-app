@@ -210,7 +210,11 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# ignore data folder since it contains large dataset (no need to push)
+# ignore some folders since they possibly contain large data (no need to push)
 data/
+images/
+
+# ignore file testing purpose
+test*.py
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,windows

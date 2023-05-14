@@ -29,6 +29,6 @@ json_str = ''
 docs = {}
 
 for line in clean_data: # dump the data to elasticsearch and define the index name
-    es.index(index="contract_tracing_app", id=i, document=line)
+    es.index(index="contract_tracing", id=i, document=line)
     i = i+1
  
