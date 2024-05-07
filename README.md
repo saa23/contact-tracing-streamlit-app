@@ -36,17 +36,21 @@ The dataset consists of 250,245 records. While the columns as following:
 26. Business Location
 
 But the important columns that needed in the project are:
-1. Location ID &emsp; $\rightarrow$ &emsp; Location Identification Number. Each DBA has a unique LIN for location specific tax filings
-2. DBA Name &emsp; $\rightarrow$ &emsp; Doing Business As Name or Location Name (Business name)
-3. Street Address &emsp; $\rightarrow$ &emsp; Business location street address
-4. City &emsp; $\rightarrow$ &emsp; Business location city
-5. Source Zipcode &emsp; $\rightarrow$ &emsp; Business location zip code
-6. Business Location &emsp; $\rightarrow$ &emsp; The latitude and longitude of the business location for mapping purposes
+1. **Location ID**: Location Identification Number. Each DBA has a unique LIN for location specific tax filings
+2. **DBA Name**: Doing Business As Name or Location Name (Business name)
+3. **Street Address**: Business location street address
+4. **City**: Business location city
+5. **Source Zipcode**: Business location zip code
+6. **Business Location**: The latitude and longitude of the business location for mapping purposes
+
 ## Requirements
 - The project use python 3.8 (but it might be ok to  use later version).
 - Whereas the python library needed, please kindly check the [requirements.txt](./requirements.txt)
 - Other than that, it is mandatory to install docker.
 ## Project Flow
+
+![Flow Diagram](./images/flow-diagram.png)
+
 - Download the dataset
 - The project only need six columns from the dataset, those are: `location ID`, `DBA name`, `street address`, `city`, `source zipcode`, and `business location`.
 - Then normalize the json data within `business location` into `langitude` and `longitude` data.
