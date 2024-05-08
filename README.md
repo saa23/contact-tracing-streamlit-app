@@ -49,7 +49,7 @@ But the important columns that needed in the project are:
 - Other than that, it is mandatory to install docker.
 ## Project Flow
 
-![Flow Diagram](./images/flow-diagram.png)
+![Flow Diagram](./images/flow-diagram-new.png)
 
 - Download the dataset
 - The project only need six columns from the dataset, those are: `location ID`, `DBA name`, `street address`, `city`, `source zipcode`, and `business location`.
