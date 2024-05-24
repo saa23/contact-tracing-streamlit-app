@@ -1,5 +1,5 @@
 # Contact Tracing Streamlit App
-The app, generated from streamlit library, can function for tracing the historical contact location, it is usually done especially during the COVID-19 pandemic. Through the app the tracing process can be searched based on `free text`, `zip code`, `business ID`, and `device ID`.
+An app, generated from Streamlit library, can be used for tracing the historical contact location, it is usually done especially during the COVID-19 pandemic. Through the app the tracing process can be searched based on `free text`, `zip code`, `business ID`, and `device ID`.
 ## Table of Contents
 - [Dataset](#dataset)
 - [Project Flow](#project-flow)
